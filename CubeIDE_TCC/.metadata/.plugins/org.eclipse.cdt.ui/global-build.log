@@ -1,0 +1,157 @@
+22:05:17 **** Incremental Build of configuration Debug for project Robo_TCC ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -Og -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-g++ -o "Robo_TCC.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Projetos\Robo_TCC\CubeIDE_TCC\Robo_TCC\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Robo_TCC.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: Robo_TCC.elf
+ 
+arm-none-eabi-size   Robo_TCC.elf 
+arm-none-eabi-objdump -h -S  Robo_TCC.elf  > "Robo_TCC.list"
+arm-none-eabi-objcopy  -O binary  Robo_TCC.elf  "Robo_TCC.bin"
+   text	   data	    bss	    dec	    hex	filename
+  19324	    228	   4504	  24056	   5df8	Robo_TCC.elf
+Finished building: default.size.stdout
+ 
+Finished building: Robo_TCC.bin
+ 
+Finished building: Robo_TCC.list
+ 
+00:30:48 **** Incremental Build of configuration Debug for project Robo_TCC ****
+make -j4 all 
+arm-none-eabi-size   Robo_TCC.elf 
+   text	   data	    bss	    dec	    hex	filename
+  19324	    228	   4504	  24056	   5df8	Robo_TCC.elf
+Finished building: default.size.stdout
+ 
+00:31:22 **** Incremental Build of configuration Debug for project Robo_TCC ****
+make -j4 all 
+arm-none-eabi-size   Robo_TCC.elf 
+   text	   data	    bss	    dec	    hex	filename
+  19324	    228	   4504	  24056	   5df8	Robo_TCC.elf
+Finished building: default.size.stdout
+ 
+00:31:45 **** Incremental Build of configuration Debug for project Robo_TCC ****
+make -j4 all 
+arm-none-eabi-size   Robo_TCC.elf 
+   text	   data	    bss	    dec	    hex	filename
+  19324	    228	   4504	  24056	   5df8	Robo_TCC.elf
+Finished building: default.size.stdout
+ 
+00:38:40 **** Incremental Build of configuration Debug for project Robo_TCC ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -Og -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-g++ -o "Robo_TCC.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Projetos\Robo_TCC\CubeIDE_TCC\Robo_TCC\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Robo_TCC.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: Robo_TCC.elf
+ 
+arm-none-eabi-size   Robo_TCC.elf 
+arm-none-eabi-objdump -h -S  Robo_TCC.elf  > "Robo_TCC.list"
+arm-none-eabi-objcopy  -O binary  Robo_TCC.elf  "Robo_TCC.bin"
+   text	   data	    bss	    dec	    hex	filename
+  19244	    228	   4504	  23976	   5da8	Robo_TCC.elf
+Finished building: default.size.stdout
+ 
+Finished building: Robo_TCC.bin
+ 
+Finished building: Robo_TCC.list
+ 
+19:21:32 **** Incremental Build of configuration Debug for project Robo_TCC ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -Og -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-g++ -o "Robo_TCC.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Projetos\Robo_TCC\CubeIDE_TCC\Robo_TCC\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Robo_TCC.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: Robo_TCC.elf
+ 
+arm-none-eabi-size   Robo_TCC.elf 
+arm-none-eabi-objdump -h -S  Robo_TCC.elf  > "Robo_TCC.list"
+arm-none-eabi-objcopy  -O binary  Robo_TCC.elf  "Robo_TCC.bin"
+   text	   data	    bss	    dec	    hex	filename
+  19260	    228	   4504	  23992	   5db8	Robo_TCC.elf
+Finished building: default.size.stdout
+ 
+Finished building: Robo_TCC.bin
+ 
+Finished building: Robo_TCC.list
+ 
+19:26:47 **** Incremental Build of configuration Debug for project Robo_TCC ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -Og -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-g++ -o "Robo_TCC.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Projetos\Robo_TCC\CubeIDE_TCC\Robo_TCC\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Robo_TCC.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: Robo_TCC.elf
+ 
+arm-none-eabi-size   Robo_TCC.elf 
+arm-none-eabi-objdump -h -S  Robo_TCC.elf  > "Robo_TCC.list"
+arm-none-eabi-objcopy  -O binary  Robo_TCC.elf  "Robo_TCC.bin"
+   text	   data	    bss	    dec	    hex	filename
+  19244	    228	   4504	  23976	   5da8	Robo_TCC.elf
+Finished building: default.size.stdout
+ 
+Finished building: Robo_TCC.bin
+ 
+Finished building: Robo_TCC.list
+ 
+02:08:53 **** Incremental Build of configuration Debug for project Robo_TCC ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -Og -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-g++ -o "Robo_TCC.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Projetos\Robo_TCC\CubeIDE_TCC\Robo_TCC\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Robo_TCC.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: Robo_TCC.elf
+ 
+arm-none-eabi-size   Robo_TCC.elf 
+arm-none-eabi-objdump -h -S  Robo_TCC.elf  > "Robo_TCC.list"
+arm-none-eabi-objcopy  -O binary  Robo_TCC.elf  "Robo_TCC.bin"
+   text	   data	    bss	    dec	    hex	filename
+  19260	    228	   4504	  23992	   5db8	Robo_TCC.elf
+Finished building: default.size.stdout
+ 
+Finished building: Robo_TCC.bin
+ 
+Finished building: Robo_TCC.list
+ 
+02:12:49 **** Incremental Build of configuration Debug for project Robo_TCC ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -Og -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-g++ -o "Robo_TCC.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Projetos\Robo_TCC\CubeIDE_TCC\Robo_TCC\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Robo_TCC.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: Robo_TCC.elf
+ 
+arm-none-eabi-size   Robo_TCC.elf 
+arm-none-eabi-objdump -h -S  Robo_TCC.elf  > "Robo_TCC.list"
+arm-none-eabi-objcopy  -O binary  Robo_TCC.elf  "Robo_TCC.bin"
+   text	   data	    bss	    dec	    hex	filename
+  19260	    228	   4504	  23992	   5db8	Robo_TCC.elf
+Finished building: default.size.stdout
+ 
+Finished building: Robo_TCC.bin
+ 
+Finished building: Robo_TCC.list
+ 
+11:05:54 **** Incremental Build of configuration Debug for project Robo_TCC ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -Og -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-g++ -o "Robo_TCC.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Projetos\Robo_TCC\CubeIDE_TCC\Robo_TCC\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Robo_TCC.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: Robo_TCC.elf
+ 
+arm-none-eabi-size   Robo_TCC.elf 
+arm-none-eabi-objdump -h -S  Robo_TCC.elf  > "Robo_TCC.list"
+arm-none-eabi-objcopy  -O binary  Robo_TCC.elf  "Robo_TCC.bin"
+   text	   data	    bss	    dec	    hex	filename
+  19260	    228	   4504	  23992	   5db8	Robo_TCC.elf
+Finished building: default.size.stdout
+ 
+Finished building: Robo_TCC.bin
+ 
+Finished building: Robo_TCC.list
+ 
+13:53:06 **** Incremental Build of configuration Debug for project Robo_TCC ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -Og -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-g++ -o "Robo_TCC.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Projetos\Robo_TCC\CubeIDE_TCC\Robo_TCC\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Robo_TCC.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: Robo_TCC.elf
+ 
+arm-none-eabi-size   Robo_TCC.elf 
+arm-none-eabi-objdump -h -S  Robo_TCC.elf  > "Robo_TCC.list"
+arm-none-eabi-objcopy  -O binary  Robo_TCC.elf  "Robo_TCC.bin"
+   text	   data	    bss	    dec	    hex	filename
+  19244	    228	   4504	  23976	   5da8	Robo_TCC.elf
+Finished building: default.size.stdout
+ 
+Finished building: Robo_TCC.bin
+ 
+Finished building: Robo_TCC.list
+ 

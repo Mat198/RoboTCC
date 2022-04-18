@@ -1,0 +1,15 @@
+TIM4->CNT
+size_msg
+TIM3->CNT
+rx_buffer
+tx_buffer
+buffer_vel
+w_rodaM1
+w_rodaM2
+pwmM1
+pwmM2
+erroM1
+erroM2
+w_targetM1
+PWM_testM1
+w_targetM2

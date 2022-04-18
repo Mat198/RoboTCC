@@ -1,0 +1,77 @@
+			/*if (start_medir_vel == false){
+				if (w_rodaM1[0] > 0.01 && w_rodaM2[0] > 0.01){
+					start_medir_vel = true;
+					//uint8_t init[] = {'I','n','i','c','i','a','d','o','!','\n'};
+					//HAL_UART_Transmit_IT(&huart2, init, 10);
+				}
+			}*/
+			
+				/*int aux;
+	int aux1;
+
+	for(int j = 0; j< 10; j++ ){
+		aux = 0;
+		aux1 = floor(testVel[j]*1000);
+
+		for(int i = 0; i<5; i++ ){
+			aux = aux1/pow(10,4-i);
+			aux1 = aux1- aux*pow(10,4-i);
+			buffer_vel[i] = aux +'0';
+		}
+		buffer_vel[5] = '\n';
+		HAL_UART_Transmit_IT(&huart2, buffer_vel, 6);
+		HAL_Delay(10);
+	}*/
+	
+	/*if(controlar == false){
+		__HAL_TIM_SET_COMPARE(&htim2, TIM_CHANNEL_1, 2000);
+		__HAL_TIM_SET_COMPARE(&htim2, TIM_CHANNEL_2, 2000);
+	}*/
+	
+	if(rx_buffer[1] == 'T'){// Função vira para a direita
+			int aux = 0;
+			int aux1 = floor(w_targetM1*1000);
+			uint8_t targets[18] = {};
+
+			targets[0] = 'M';
+			targets[1] = '1';
+			targets[2] = ':';
+
+			targets[9] = 'M';
+			targets[10] = '2';
+			targets[11] = ':';
+
+			for(int i = 3; i<8; i++ ){
+				aux = aux1/pow(10,4-i);
+				aux1 = aux1- aux*pow(10,4-i);
+				targets[i] = aux +'0';
+			}
+			for(int i = 12; i<16; i++ ){
+				aux = aux1/pow(10,4-i);
+				aux1 = aux1- aux*pow(10,4-i);
+				targets[i] = aux +'0';
+			}
+
+			for (int i = 0; i<3; i++ ) {
+				targets[9-i] = targets[8-i];
+			}
+
+			for (int i = 0; i<3; i++ ) {
+				targets[9-i] = targets[8-i];
+			}
+
+			targets[2] =',';
+			HAL_UART_Transmit_IT(&huart2, targets, 12);
+		}
+			
+##############################################################
+
+Controlador antigo / errado  / de onde veio esse caraio?????
+
+double M1A1 = 2.0*Tloop*K1 + K1*(Tloop*Tloop)/Ti1 + 2.0*K1*Td1;
+double M1A2 = K1*(Tloop*Tloop)/Ti1 - 2.0*Tloop*K1 - 4.0*K1*Td1;
+double M1A3 = 2.0*K1*Td1;
+
+double M2A1 = 2.0*Tloop*K2 + K2*(Tloop*Tloop)/Ti2 + 2.0*K2*Td2;
+double M2A2 = K2*(Tloop*Tloop)/Ti2 - 2.0*Tloop*K2 - 4.0*K2*Td2;
+double M2A3 = 2.0*K2*Td2;

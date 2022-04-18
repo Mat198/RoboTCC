@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<data>
+  <loop>false</loop>
+  <repeat_times>1</repeat_times>
+  <repeat_period>500</repeat_period>
+  <packets_list>
+    <packet name="packet_0">
+      <payload>53303030305330303030</payload>
+    </packet>
+    <packet name="packet_1">
+      <payload>46323530304632353030</payload>
+    </packet>
+    <packet name="packet_2">
+      <payload>46303030304630303030</payload>
+    </packet>
+    <packet name="packet_3">
+      <payload>54303030305430303030</payload>
+    </packet>
+    <packet name="packet_4">
+      <payload>54323530305432353030</payload>
+    </packet>
+    <packet name="packet_5">
+      <payload>46303830305433303030</payload>
+    </packet>
+    <packet name="packet_6">
+      <payload>54303830304633303030</payload>
+    </packet>
+    <packet name="packet_7">
+      <payload>54333030304630383030</payload>
+    </packet>
+    <packet name="on">
+      <payload>47303030304730303030</payload>
+    </packet>
+    <packet name="packet_8">
+      <payload>46313130304631313030</payload>
+    </packet>
+    <packet name="medir">
+      <payload>254D3131303031313030</payload>
+    </packet>
+    <packet name="controlar">
+      <payload>25433030303030303030</payload>
+    </packet>
+    <packet name="retorno">
+      <payload>25523030303030303030</payload>
+    </packet>
+    <packet name="testencoders">
+      <payload>25453030303030303030</payload>
+    </packet>
+    <packet name="Config">
+      <payload>25302530303030303030</payload>
+    </packet>
+    <packet name="runMode">
+      <payload>25473030303030303030</payload>
+    </packet>
+  </packets_list>
+</data>
